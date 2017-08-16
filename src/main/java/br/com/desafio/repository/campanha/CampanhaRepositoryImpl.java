@@ -52,6 +52,7 @@ public class CampanhaRepositoryImpl implements CampanhaRepository {
 		paramMap.put("nomeCampanha", campanha.getNome());
 		paramMap.put("dataInicioVigencia", campanha.getDataIni());
 		paramMap.put("dataFimVigencia", campanha.getDataFim());
+		paramMap.put("id_time", campanha.getTimeCoracao().getId());
 		this.config.update(INSERT_CAMPANHA, paramMap);
 	}
 
@@ -97,6 +98,7 @@ public class CampanhaRepositoryImpl implements CampanhaRepository {
 		paramMap.put("nomeCampanha", campanha.getNome());
 		paramMap.put("dtInicioVig", campanha.getDataIni());
 		paramMap.put("dtFimVig", campanha.getDataFim());
+		paramMap.put("id_time", campanha.getTimeCoracao().getId());
 		
 		this.config.update(UPDATE_CAMPANHA, paramMap);
 		

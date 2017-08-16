@@ -1,4 +1,7 @@
 package br.com.desafio.run.model.campanha;
+
+import br.com.desafio.run.model.time_coracao.TimeCoracao;
+
 /**
  * 
  * @author Luciano
@@ -17,12 +20,15 @@ public class Campanha implements Comparable<Campanha>{
 	private String dataIni;
 	
 	private String dataFim;
+	
+	private TimeCoracao timeCoracao;
 
-	public Campanha(long id, String nome, String dataIni, String dataFim ) {
+	public Campanha(long id, String nome, String dataIni, String dataFim, TimeCoracao timeCoracao ) {
 		this.id = id;
 		this.nome = nome;
 		this.dataIni = dataIni;
 		this.dataFim = dataFim;
+		this.timeCoracao = timeCoracao;
 
 	}
 
@@ -56,6 +62,14 @@ public class Campanha implements Comparable<Campanha>{
 
 	public void setDataFim(String dataFim) {
 		this.dataFim = dataFim;
+	}
+	
+	public TimeCoracao getTimeCoracao() {
+		return timeCoracao;
+	}
+
+	public void setTimeCoracao(TimeCoracao timeCoracao) {
+		this.timeCoracao = timeCoracao;
 	}
 
 	@Override
@@ -98,5 +112,5 @@ public class Campanha implements Comparable<Campanha>{
 	  	return strVal;
 	}
 
-	
+		
 }
