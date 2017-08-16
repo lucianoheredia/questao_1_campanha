@@ -55,7 +55,7 @@ public interface CampanhaRepository {
 	public static final String UPDATE_CAMPANHA = " UPDATE CAMPANHA SET " 
 			+ "  	NOME_CAMPANHA = :nomeCampanha ," 
 			+ "		DATA_INICIO_VIG = :dtInicioVig,	" 
-			+ "		DATA_FIM_VIG = :dtFimVig "
+			+ "		DATA_FIM_VIG = :dtFimVig, "
 			+ "		ID_TIME = :id_time" 
 			+ "   WHERE id_campanha = :id ";
 	
